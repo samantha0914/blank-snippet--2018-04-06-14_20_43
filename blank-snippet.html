@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <title>Run: Blank snippet</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="" />
+
+    <!-- For purposes of experimentation, disable caching, so that can make changes and see results immediately on reload: -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/office-ui-fabric-js@1.4.0/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/office-ui-fabric-js@1.4.0/dist/css/fabric.components.min.css" />
+
+    <!-- Style -->
+    <style type="text/css">
+        /* Your style goes here */
+        
+    </style>
+</head>
+
+<body>
+    <!-- HTML -->
+    <button id="run" class="ms-Button">
+        <span class="ms-Button-label">Run</span>
+    </button>
+    
+
+    <!-- ScriptLab-Specific Runtime Helpers -->
+    <script src="https://script-lab.azureedge.net/runtime-helpers.js?hash=aa0d3ff3e68d9a8b0d5d"></script>
+    <script>
+        ScriptLab._strings = {"unexpectedError":"An unexpected error occurred","authenticationWasCancelledByTheUser":"Authentication was cancelled by the user","officeVersionDoesNotSupportAuthentication":"Your current version of Office does not support displaying an authentication dialog. Please update to a newer version, or try Office Online, if you would like to run this snippet."};
+    </script>
+    
+    <!-- JS Libraries -->
+    <script crossorigin="anonymous" src="https://unpkg.com/core-js@2.4.1/client/core.min.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/@microsoft/office-js-helpers@0.7.4/dist/office.helpers.min.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/jquery@3.1.1"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+        "use strict";
+        
+        $("#run").click(run);
+        function run() {
+            OfficeHelpers.UI.notify("Your code goes here");
+        }
+        
+
+    </script>
+</body>
+
+</html>
